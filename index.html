@@ -6,21 +6,8 @@
     <title>Portfolio</title>
     <link rel = "stylesheet" href="style.css">
     <link rel = "stylesheet" href="mediaqueries.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script>
-        var app = angular.module('PhoneApp', []);
-        app.controller('PhoneFormController', function($scope) {
-            $scope.number = '';        
-            $scope.submitForm = function() {
-                
-                if ($scope.number.length === 10) { 
-                    alert("Phone number delivered! Now, let the digital connection begins");
-                } else {
-                    alert("Please enter a 10-digit phone number.");
-                }
-            };
-        });
-    </script>
+    
+   
 </head>
 <body ng-app="PhoneApp" ng-controller="PhoneFormController">
     <nav id= "desktop-nav">
@@ -264,16 +251,7 @@
             <p><a href="https://www.linkedin.com/in/kshitiz-kumar-a51344226">LinkedIn</a></p>
         </div>
         </div>
-        <div class="phone-submit">
-        <p class="phone_quote">A phone call is better than an email !</p><br>
-        <form ng-submit="submitForm()">
-            <div class="phone-box">
-            <label for="number">Phone No.</label>
-            <input type="tel" id="number" ng-model="number" required /><br><br>
         
-            <button type="submit" class="number-submit">Submit</button>
-        </form>
-        </div>
     </div>
       </section>
       <footer>
